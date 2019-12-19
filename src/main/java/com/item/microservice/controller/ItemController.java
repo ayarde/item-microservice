@@ -1,8 +1,8 @@
 package com.item.microservice.controller;
 
 import com.item.microservice.model.Item;
-import com.item.microservice.model.Product;
 import com.item.microservice.model.service.ItemService;
+import com.microservice.common.model.entity.Product;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,7 +80,7 @@ public class ItemController {
 
     @PutMapping("/edit/{id}")
     @ResponseStatus(HttpStatus.CREATED)
-    public Product edit(@RequestBody Product product,  @PathVariable Long id){
+    public Product edit(@RequestBody Product product, @PathVariable Long id){
         return itemService.update(product,id);
     }
 

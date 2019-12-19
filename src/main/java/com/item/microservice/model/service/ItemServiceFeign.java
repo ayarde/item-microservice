@@ -2,9 +2,8 @@ package com.item.microservice.model.service;
 
 import com.item.microservice.client.ProductRestClient;
 import com.item.microservice.model.Item;
-import com.item.microservice.model.Product;
+import com.microservice.common.model.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

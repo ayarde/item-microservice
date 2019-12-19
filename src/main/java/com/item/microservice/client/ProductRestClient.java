@@ -1,6 +1,6 @@
 package com.item.microservice.client;
 
-import com.item.microservice.model.Product;
+import com.microservice.common.model.entity.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
